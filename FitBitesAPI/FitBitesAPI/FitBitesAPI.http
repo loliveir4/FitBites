@@ -1,0 +1,6 @@
+@FitBitesAPI_HostAddress = http://localhost:5023
+
+GET {{FitBitesAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
