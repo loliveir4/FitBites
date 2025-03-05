@@ -1,0 +1,70 @@
+ 
+## Arquivos do Sistema ##
+.DS_Store
+Thumbs.db
+
+## Pastas de Build e Binários ##
+bin/
+obj/
+out/
+dist/
+Debug/
+Release/
+
+## Arquivos de Configuração e Logs ##
+*.log
+*.user
+*.suo
+*.cache
+*.csproj.user
+*.pidb
+*.sln.docstates
+.vscode/
+.idea/
+
+## Dependências e Pacotes ##
+node_modules/
+packages/
+*.nupkg
+project.lock.json
+
+## Configuração do Visual Studio ##
+.vs/
+*.sln.ide
+*.iml
+
+## Arquivos Temporários ##
+*.tmp
+*.temp
+*.swp
+*.bak
+
+## Arquivos Sensíveis ##
+appsettings.json
+appsettings.*.json
+secrets.json
+.env
+
+## Arquivos Gerados por MAUI ##
+.platforms/
+*.db
+*.db-shm
+*.db-wal
+
+## Arquivos do Rider ##
+.idea/
+*.dotCover
+*.sln.DotSettings
+*.sln.DotSettings.user
+
+## Arquivos de Teste e Cobertura ##
+TestResults/
+coverage/
+*.coverage
+*.trx
+
+## Certificados e Chaves ##
+*.pfx
+*.key
+*.cer
+*.p12
