@@ -1,6 +1,4 @@
-﻿using FitBitesLibrary.Models;
-
-namespace FitBitesLibrary.Data;
+﻿namespace FitBitesLibrary.Data;
 
 /// <summary>
 /// Represents an ingredient that belongs to a single recipe.
@@ -9,7 +7,8 @@ public class Ingredient {
     /// <summary>
     /// Unique identifier for the ingredient.
     /// </summary>
-    public int Id { get; set; }
+    [Key]
+    public int IngredientId { get; set; }
 
     /// <summary>
     /// Name of the ingredient (e.g., "Chicken Breast").
@@ -29,6 +28,7 @@ public class Ingredient {
     /// <summary>
     /// Foreign key linking the ingredient to a specific recipe.
     /// </summary>
+    [ForeignKey("Recipe")]
     public int RecipeId { get; set; }
 
     /// <summary>

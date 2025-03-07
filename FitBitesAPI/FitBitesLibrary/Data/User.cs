@@ -1,11 +1,10 @@
-﻿using FitBitesLibrary.Models;
-
-namespace FitBitesLibrary.Data;
+﻿namespace FitBitesLibrary.Data;
 public class User {
     /// <summary>
     /// Unique identifier for the user.
     /// </summary>
-    public int Id { get; set; }
+    [Key]
+    public int UserId { get; set; }
 
     /// <summary>
     /// The username used for login.
@@ -40,8 +39,6 @@ public class User {
     /// </summary>
     public DateTime TokenExpiry { get; set; }
 
-    // Timestamps
-
     /// <summary>
     /// The date and time when the user was created.
     /// Defaults to the current UTC time.
@@ -51,11 +48,6 @@ public class User {
     /// <summary>
     /// List of recipes created by the user.
     /// </summary>
-    public List<Recipe> Recipes { get; set; } = [];
-
-    /// <summary>
-    /// List of recipes that the user has marked as favorites.
-    /// </summary>
-    public List<Recipe> FavoriteRecipes { get; set; } = [];
+    public List<Recipe> Recipes { get; set; }
 }
 

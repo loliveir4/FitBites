@@ -1,16 +1,20 @@
-﻿using FitBitesLibrary.Models;
-
-namespace FitBitesLibrary.Data;
+﻿namespace FitBitesLibrary.Data;
 public class Recipe {
     /// <summary>
     /// Unique identifier for the recipe.
     /// </summary>
-    public int Id { get; set; }
+    [Key]
+    public int RecipeId { get; set; }
 
     /// <summary>
     /// Name of the recipe.
     /// </summary>
     public string Name { get; set; }
+
+    /// <summary>
+    /// Time of the register
+    /// </summary>
+    public DateTime CreatedTime { get; set; }
 
     /// <summary>
     /// URL of the recipe's representative image.
@@ -31,11 +35,6 @@ public class Recipe {
     /// Indicates whether the recipe is private (visible only to the owner).
     /// </summary>
     public bool IsPrivate { get; set; }
-
-    /// <summary>
-    /// Indicates whether the recipe has been marked as deleted.
-    /// </summary>
-    public bool IsDeleted { get; set; }
 
     /// <summary>
     /// The nutritional goal associated with the recipe (e.g., muscle gain, weight loss, etc.).
@@ -60,7 +59,8 @@ public class Recipe {
     /// <summary>
     /// Identifier of the user who created the recipe.
     /// </summary>
-    public int IdUser { get; set; }
+    [ForeignKey("User")]
+    public int UserId { get; set; }
 
     /// <summary>
     /// The user who owns the recipe.
@@ -72,8 +72,4 @@ public class Recipe {
     /// </summary>
     public List<Ingredient> Ingredients { get; set; }
 
-    /// <summary>
-    /// List of users who have favorited this recipe.
-    /// </summary>
-    public List<User> FavoritedUsers { get; set; }
 }
