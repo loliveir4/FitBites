@@ -1,4 +1,4 @@
-﻿namespace FitBitesLibrary.Models;
+﻿namespace FitBitesLibrary.Infraestructure.Models;
 
 /// <summary>
 /// Defines meal types for recipes.

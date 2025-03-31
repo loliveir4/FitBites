@@ -1,4 +1,6 @@
-﻿namespace FitBitesLibrary.Data;
+﻿using FitBitesLibrary.Core.Enum;
+
+namespace FitBitesLibrary.Core.Entities;
 public class Recipe {
     /// <summary>
     /// Unique identifier for the recipe.

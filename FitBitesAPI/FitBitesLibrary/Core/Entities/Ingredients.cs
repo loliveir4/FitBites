@@ -1,4 +1,6 @@
-﻿namespace FitBitesLibrary.Data;
+﻿using FitBitesLibrary.Core.Enum;
+
+namespace FitBitesLibrary.Core.Entities;
 
 /// <summary>
 /// Represents an ingredient that belongs to a single recipe.

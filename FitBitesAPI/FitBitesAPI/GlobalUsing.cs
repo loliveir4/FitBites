@@ -1,3 +1,4 @@
-﻿global using FitBitesAPI.DbContext;
-global using Microsoft.EntityFrameworkCore;
-global using FitBitesLibrary.Data;
+﻿global using Microsoft.EntityFrameworkCore;
+global using FitBitesLibrary.Core.Interfaces;
+global using FitBitesLibrary.Application.Dtos;
+

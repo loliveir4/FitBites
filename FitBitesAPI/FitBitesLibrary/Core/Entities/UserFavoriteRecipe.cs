@@ -1,4 +1,4 @@
-﻿namespace FitBitesLibrary.Data;
+﻿namespace FitBitesLibrary.Core.Entities;
 
 /// <summary>
 /// Represents a many-to-many relationship between User and Recipe for favoriting recipes.

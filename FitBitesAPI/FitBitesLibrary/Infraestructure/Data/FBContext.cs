@@ -1,4 +1,5 @@
-﻿namespace FitBitesAPI.DbContext;
+﻿namespace FitBitesLibrary.Infraestructure.Data;
+
 using Microsoft.EntityFrameworkCore;
 public class FBContext(DbContextOptions<FBContext> options) : DbContext(options) {
     public DbSet<User> Users { get; set; }

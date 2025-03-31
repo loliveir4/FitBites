@@ -1,4 +1,4 @@
-﻿namespace FitBitesLibrary.Models;
+﻿namespace FitBitesLibrary.Core.Enum;
 
 /// <summary>
 /// Defines the different cooking methods for recipes.
